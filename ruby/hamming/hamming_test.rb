@@ -25,12 +25,10 @@ class HammingTest < MiniTest::Unit::TestCase
   end
 
   def test_small_hamming_distance_in_longer_strand
-    skip
     assert_equal 1, Hamming.compute('GGACG', 'GGTCG')
   end
 
   def test_nonunique_characters_within_first_strand
-    skip
     assert_equal 1, Hamming.compute('AGA', 'AGG')
   end
 
