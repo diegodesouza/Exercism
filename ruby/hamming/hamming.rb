@@ -1,9 +1,12 @@
 class Hamming
-  def self.compute(a, b)
-    if a == b
-      0
-    else
-      1
+  def self.compute(top_dna, bottom_dna)
+    distance_count = 0
+
+    [top_dna.length, bottom_dna.length].min.times do |dna|
+      unless top_dna[dna] == bottom_dna[dna]
+        distance_count += 1
+      end
     end
+   distance_count
   end
 end
