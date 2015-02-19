@@ -1,6 +1,10 @@
 class Raindrops
   def self.convert(n)
-    if n % 3 == 0
+    if n % 3 == 0 && n % 5 == 0
+      "PlingPlang"
+    elsif n % 3 == 0 && n % 7 == 0
+      "PlingPlong"
+    elsif n % 3 == 0
       "Pling"
     elsif n % 5 == 0
       "Plang"
