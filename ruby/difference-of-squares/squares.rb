@@ -4,7 +4,7 @@ class Squares
   end
 
   def square_of_sums
-    @numbers.reduce { |a, b| a + b } ** 2
+    @numbers.reduce(:+) ** 2
   end
 
   def sum_of_squares
